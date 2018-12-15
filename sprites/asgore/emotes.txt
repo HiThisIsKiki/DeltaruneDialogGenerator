@@ -1,0 +1,5 @@
+default default
+happy ^^
+smile :)
+surprise o_o
+wink ;)

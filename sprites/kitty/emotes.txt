@@ -1,0 +1,8 @@
+catface 83
+catface2 :3
+default default
+eyesup ^_^
+happy :)
+happy2 :D
+neutral :|
+silly :P

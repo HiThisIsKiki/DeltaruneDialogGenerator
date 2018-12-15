@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Determination";
+  src: url(fonts/DTM-Mono.otf);
+}
+html,body{
+	background:black;
+	padding:0;
+	margin:0;
+}
+#title img
+{
+	max-width: 80%;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+section
+{
+	display:inline-block;
+	min-height:100vh;
+	width:100%;
+	position:relative;
+	overflow:auto;
+	text-align:center;
+}
+.choice
+{
+	display:inline-block;
+	height:100px;
+	width:100px;	
+	border:5px solid #ff7f27;
+	margin:10px 20px;
+	position:relative;
+	cursor:pointer;
+}
+.choice.chosen
+{
+	border-color:#ffff00;
+}
+.choice img
+{
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.choice img.secondary, .choice img.special
+{
+	z-index:-1;
+}
+.choice.stop img.special
+{
+	z-index:5;
+}
+.choice.chosen img.secondary
+{
+	z-index: 3;
+}
+.loader
+{
+	width:25%;
+	height:25%;
+	position:absolute;	
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+.loader:after
+{
+	content:'';
+	background:url('deltarune.png');
+	display:block;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	animation:spin 1200ms ease-in-out infinite;
+}
+.bigloader
+{
+	position:absolute;	
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	width:200px;
+	height:200px;}
+.bigloader:after
+{
+	content:'';
+	background:url('bigdeltarune.png');
+	display:block;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	animation:spin 1200ms ease-in-out infinite;
+	height:100%;
+	width:100%;
+}
+@keyframes spin
+{
+	0% {transform:rotate(0deg)}
+	100% {transform:rotate(360deg)}
+}
+h1
+{
+	display:block;
+	width:95%;
+	margin: 10px auto 50px auto;
+	border-bottom:1px solid white;
+	font-family:"Determination";
+	color:white;
+	font-size: 32px;
+	cursor:default;
+}
+h1>span
+{
+	display:inline-block;
+	padding: 0 20px;
+	transform:translate(0,50%);
+	background:black;
+	cursor:default;
+}
+p
+{
+	padding: 0 10px;
+	font-size:1.3em;
+	color:white;
+	font-family:"determination";
+}
+textarea
+{
+	resize:none;
+	font-family:"determination";
+	background:black;
+	border: 5px solid white;
+	color:white;
+	padding:10px;
+	font-size: 1.4em;
+	width:60%;
+	height: 30vh;
+	margin-top:10px;
+}
+a
+{	
+	display:inline-block;
+	font-family:"Determination";
+	text-decoration: none;
+	font-size:4em;	
+	color:white;
+	position:relative;
+	cursor:pointer;
+}
+a:hover:before
+{
+	content:"\2665";
+	color:red;
+	display:inline-block;
+	font-family:"Determination";
+	font-size:50px;
+	position:absolute;
+	right:100%;
+	top:50%;
+	transform:translate(0,-50%);
+}
+.hide
+{
+	display:none;
+}
+.emote
+{
+	display:inline-block;
+	margin:10px;
+}
+.emoteInfo
+{
+	display:inline-block;
+	width:100%;
+	color:white;	
+	text-align:center;
+	padding:5px 0;	
+}
+.emoteInfo .emotetext
+{
+	padding-left:10px;
+	display:inline-block;
+	line-height:40px;
+	font-family:Helvetica;
+	font-size:16px;
+}
+.emoteInfo .emoteimg
+{
+	height:40px;	
+	vertical-align: middle;
+	padding-left:10px;
+}

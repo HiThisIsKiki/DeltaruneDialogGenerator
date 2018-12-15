@@ -1,0 +1,6 @@
+angry :<
+default default
+happy :D
+neutral :|
+sad :(
+wink ;)

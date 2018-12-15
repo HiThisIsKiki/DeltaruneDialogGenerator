@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>Deltarune Textbox Generator</title>	
+	<script src="drawing.js"></script> 
+	<script src="script.js"></script>
+	<script src="gif.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onLoad="init()">
+	<img src="deltarune.png" style="display:none;"> <!--Force the loading sign to load before anything else is displayed -->
+	<section id="title">
+		<img src="title.png" alt="">
+	</section>
+	<section id="character">
+		<h1><span>Choose</span></h1>
+		<div name="ralsie" class="choice"></div>
+		<div name="susie" class="choice"></div>
+		<div name="lancer" class="choice"></div>		
+		<div name="rk" class="choice"></div>
+		<div name="king" class="choice"></div>
+		<div name="alphys" class="choice"></div>
+		<div name="toriel" class="choice"></div>
+		<div name="asgore" class="choice"></div>
+		<div name="undyne" class="choice"></div>
+		<div name="sans" class="choice"></div>		
+		<div name="kitty" class="choice"></div>
+		<div name="croco" class="choice"></div>
+		<div name="cat" class="choice"></div>
+		<div name="deergirl" class="choice"></div>
+		<div name="deerdad" class="choice"></div>
+		<div name="snek" class="choice"></div>
+		<div name="birb" class="choice"></div>
+		<div name="burgerpants" class="choice"></div>
+	</section>
+	<section id="text" class="hide">
+		<h1><span>Speak</span></h1>
+		<p>Enter the text you want this character to say.</p>
+		<p>Include a full stop at the end of every sentence.</p>
+		<textarea id="entertext" resizeable=no></textarea>
+		<div class="emoteInfo">
+			<p>Place any of the below emotes at the beginning of a sentence to have the character use that face for it.</p>
+		</div><br>
+		<a id="go">TALK</a>
+	</section>
+	<section id="generate" class="hide">
+	</section>
+	<section id="generateTemplate" class="hide">
+		<h1><span>It is done.</span></h1>
+		<p>To make changes to your gif, or make a new one, just scroll up.</p>		
+		<div class="right">
+			<img id="resultimg" />
+		</div>
+		<a onclick='saveGif()'>SAVE</a>
+	</section>
+	<canvas style="display:none;" id="textcanvas" width=500 height=161></canvas>
+</body>
+</html>
