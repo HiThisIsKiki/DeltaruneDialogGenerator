@@ -4,6 +4,6 @@ default default
 eyes e_e
 neutral :|
 squint >_>
-surprised o_o
+surprised O_O
 sweat ^^;
 sweat2 :S
