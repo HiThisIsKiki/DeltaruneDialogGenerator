@@ -1,9 +1,0 @@
-blush owo
-blush2 OwO
-default default
-eyes e_e
-neutral :|
-squint >_>
-surprised O_O
-sweat ^^;
-sweat2 :S
